@@ -2,23 +2,4 @@
     display: grid;
     gap: 16px;
     border: 2px dotted black;
-
-    @for $i from 1 through 6 {
-        &__#{$i} {
-            @extend .grid;
-            grid-template-columns: repeat($i, 1fr);
-        }
-    }
-
-    
-    // &__3 {
-    //     @extend .grid;
-    //     grid-template-columns: repeat(3, 1fr);
-    // }
-
-    // &__4 {
-    //     @extend .grid;
-    //     grid-template-columns: repeat(4, 1fr);
-    // }
-
-}
+     }

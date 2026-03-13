@@ -3,28 +3,10 @@
   margin: 0;
 }
 
-.grid, .grid__6, .grid__5, .grid__4, .grid__3, .grid__2, .grid__1 {
+.grid {
   display: grid;
   gap: 16px;
   border: 2px dotted black;
-}
-.grid__1 {
-  grid-template-columns: repeat(1, 1fr);
-}
-.grid__2 {
-  grid-template-columns: repeat(2, 1fr);
-}
-.grid__3 {
-  grid-template-columns: repeat(3, 1fr);
-}
-.grid__4 {
-  grid-template-columns: repeat(4, 1fr);
-}
-.grid__5 {
-  grid-template-columns: repeat(5, 1fr);
-}
-.grid__6 {
-  grid-template-columns: repeat(6, 1fr);
 }
 
 .card {
@@ -48,9 +30,4 @@
 .card__description {
   font-size: 14px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-}
-
-.card__2 {
-  font-size: large;
-  color: aqua;
 }/*# sourceMappingURL=main.css.map */
