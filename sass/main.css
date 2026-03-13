@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.grid, .grid__6, .grid__5, .grid__4, .grid__3, .grid__2, .grid__1 {
+  display: grid;
+  gap: 16px;
+  border: 2px dotted black;
+}
+.grid__1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid__2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid__3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid__4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid__5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid__6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.card {
+  background-color: rgb(175, 216, 255);
+  border-radius: 20px;
+  padding: 8px;
+}
+.card__image img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__content {
+  padding: 0 16px;
+}
+.card__title {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+.card__description {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card__2 {
+  font-size: large;
+  color: aqua;
+}/*# sourceMappingURL=main.css.map */
