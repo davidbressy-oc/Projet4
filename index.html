@@ -11,33 +11,66 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<!-- HEADER !-->
 <header>
-        <div class="header">
+        <div class="header__title-container">
                 <h1 class="main__title">ohmyfood</h1>
         </div>
-        <form>
-                <i class="fa-solid fa-location-dot" style="color: rgb(0, 0, 0);"></i>
+        <form class="header__form">
+                <i class="fa-solid fa-location-dot"></i>
                 <input class="form__input" type="text" placeholder="Paris, Belleville">
         </form>
 </header>
 <body>
-        <section>
-        <div>
+<!-- RESERVATIONS !-->
+        <section class="reservation">
+        <div class="reservation__title-container">
             <h2 class="reservation__title">Réservez le menu qui vous convient</h2>
         </div>
-        <div>
+        <div class="reservation__description-container">
             <p class="reservation__description">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
         </div>
-        <div>
+        <div class="reservation__button-container">
             <button class="reservation__button"></button>
             <span class="reservation__button--text">Explorer nos restaurants</span>
         </div>
     </section>
-
-
-
-
-
+<!-- FONCTIONNEMENT !-->
+        <section class="functionnement">
+        <div>
+            <h3 class="functionnement__title">Fonctionnement</h3>
+        </div>
+        <div class="functionnement__cards">
+        <cards class="functionnement__card">
+        <div class="functionnement__card--number-container">
+            <span class="functionnement__card--number">1</span>
+        </div>
+        <div class="functionnement__card--content">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <span>Choisissez un restaurant</span>
+        </div>
+        </cards>
+        <cards class="functionnement__card">
+        <div class="functionnement__card--number-container">
+            <span class="functionnement__card--number">2</span>
+        </div>
+        <div class="functionnement__card--content">
+            <i class="fa-solid fa-list-ul"></i>
+            <span>Composez votre menu</span>
+        </div>
+        </cards>
+        <cards class="functionnement__card">
+        <div class="functionnement__card--number-container">
+            <span class="functionnement__card--number">3</span>
+        </div>
+        <div class="functionnement__card--content">
+            <i class="fa-solid fa-store"></i>
+            <span>Dégustez au restaurant</span>
+        </div>
+        </cards>
+        </div>
+        </section>
+<!-- RESTAURANTS !-->
 
     <section class="grid__3">
         <div class="card">
