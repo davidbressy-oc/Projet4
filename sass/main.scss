@@ -1,11 +1,17 @@
+// Utils (toujours en premier)
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+
 // Base
 @import "./base/refresh.scss";
-
-// Utils
-@import "./utils/variables.scss";
+@import "./base/typography.scss";
 
 // Layouts
 @import "./layouts/grids.scss";
+@import "./layouts/header.scss";
+@import "./layouts/footer.scss";
+@import "./layouts/sections.scss";
 
 // Components
 @import "./components/cards.scss";
+@import "./components/buttons.scss";

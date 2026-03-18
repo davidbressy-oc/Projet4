@@ -1,0 +1,25 @@
+.reservation {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backgroundColorLightGrey_2;
+    padding: 42px 0;
+
+    &__title {
+        margin-bottom: 27px;
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+    &__button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+}
