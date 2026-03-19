@@ -15,3 +15,45 @@
   @include title(29px);
 
 }
+
+.reservation__description {
+  
+  @include title(24px, 300);
+
+}
+
+.reservation__button {
+
+  @include title(24px, 500);
+
+}
+
+.functionnement__title {
+
+  @include title(24px, 700, left);
+
+}
+
+.functionnement__card-text {
+
+  @include title(16px, 500);
+
+}
+
+.functionnement__card-number {
+
+  @include title(14px, 500);
+
+}
+
+.card__title {
+
+  @include title(18px, 700, left);
+
+}
+
+.card__description {
+
+  @include title(17px, 300, left);
+
+}
