@@ -1,6 +1,6 @@
 .main__title {
 
-  @include main-title(30px);
+  @include main__title(30px);
   
 }
 
@@ -46,7 +46,7 @@
 
 }
 
-.card__title {
+.restaurants__title {
 
   @include title(18px, 700, left);
 
@@ -55,5 +55,11 @@
 .card__description {
 
   @include title(17px, 300, left);
+
+}
+
+.restaurants__badge {
+
+  @include title(14px, 500);
 
 }
