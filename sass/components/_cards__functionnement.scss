@@ -16,6 +16,8 @@
         margin-left: -12px;
         display: flex;
         align-items: center;
+        width: 100%;
+        margin-bottom: 24px;
     }
 
     &__number {
@@ -23,6 +25,7 @@
         height: 24px;
         border-radius: 50%;
         background-color: $primaryColor;
+        margin-top: -24px;
         color: white;
         display: flex;
         align-items: center;

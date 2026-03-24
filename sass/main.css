@@ -70,6 +70,23 @@
   text-align: center;
 }
 
+.footer__title {
+  font-family: shrikhand, cursive;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  text-align: left;
+}
+
+.footer__links a {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+}
+
 .grid {
   display: grid;
   gap: 16px;
@@ -77,20 +94,22 @@
 }
 
 .header__title__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 14px 89px;
-  margin-bottom: 3px;
+  z-index: 2;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
 .header__form {
+  position: relative;
   display: flex;
   justify-content: center;
   background-color: #EAEAEA;
   padding: 16px;
-  margin-bottom: 6px;
+  z-index: 1;
   gap: 17px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
@@ -110,6 +129,28 @@
 }
 .form__input::placeholder {
   color: #353535;
+}
+
+.footer {
+  background-color: #353535;
+  padding: 22px 25px 40px 25px;
+}
+.footer__title {
+  padding-bottom: 16px;
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer__links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer__links i {
+  color: white;
+  width: 22px;
 }
 
 .reservation {
@@ -138,15 +179,15 @@
 .functionnement {
   display: flex;
   flex-direction: column;
-  padding: 48px 34px 68px 20px;
+  padding: 48px 24px 66px 20px;
 }
 .functionnement__title {
-  margin-bottom: 12px;
+  margin-bottom: 26px;
 }
 
 .restaurants {
   background-color: #F6F6F6;
-  padding: 48px 17px 68px 17px;
+  padding: 48px 17px 108px 17px;
 }
 
 .restaurants__title {
@@ -186,15 +227,6 @@
   -o-object-position: bottom;
      object-position: bottom;
 }
-.restaurants__card__image--note img {
-  display: block;
-  width: 100%;
-  height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 10% 61%;
-     object-position: 10% 61%;
-}
 .restaurants__card__bottom {
   display: flex;
   justify-content: space-between;
@@ -208,10 +240,29 @@
   padding: 16px;
 }
 .restaurants__card__like {
+  position: relative;
   background: transparent;
   border: none;
-  font-size: 22px;
-  padding-right: 25px;
+  width: 32px;
+  height: 32px;
+}
+.restaurants .heart--empty, .restaurants .heart--full {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 32px;
+  padding-right: 32px;
+}
+.restaurants .heart--full {
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 124%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.restaurants .heart--full:active {
+  opacity: 1;
 }
 .restaurants .card__title {
   color: black;
@@ -242,12 +293,15 @@
   margin-left: -12px;
   display: flex;
   align-items: center;
+  width: 100%;
+  margin-bottom: 24px;
 }
 .functionnement__card__number {
   width: 24px;
   height: 24px;
   border-radius: 50%;
   background-color: #9356DC;
+  margin-top: -24px;
   color: white;
   display: flex;
   align-items: center;

@@ -1,21 +1,23 @@
 .header__title__content {
 
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 14px 89px;
-    margin-bottom: 3px;
+    z-index: 2;
     @include shadow(0px, 2px, 4px, 0px, #00000026);
 
 }
 
 .header__form {
-
+    
+    position: relative;
     display: flex;
     justify-content: center;
     background-color: $headerDarkColor;
     padding: 16px;
-    margin-bottom: 6px;
+    z-index: 1;
     gap: 17px;
     @include shadow(0px, 4px, 4px, 0px, #00000040);
 
