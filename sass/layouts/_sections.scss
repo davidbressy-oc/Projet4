@@ -30,11 +30,11 @@
 
     display: flex;
     flex-direction: column;
-    padding: 48px 34px 68px 20px;
+    padding: 48px 24px 66px 20px;
 
     &__title {
 
-        margin-bottom: 12px;
+        margin-bottom: 26px;
     }
 
 }
@@ -42,6 +42,6 @@
 .restaurants {
 
     background-color: $backgroundColorLightGrey_2;
-    padding: 48px 17px 68px 17px;
+    padding: 48px 17px 108px 17px;
 
 }

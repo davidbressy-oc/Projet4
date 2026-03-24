@@ -41,14 +41,6 @@
             object-position: bottom;
         }
 
-        &__card__image--note img {
-            display: block;
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            object-position: 10% 61%;
-        }
-
         &__card__bottom {
             display: flex;
             justify-content: space-between;
@@ -64,21 +56,42 @@
         }
 
         &__card__like {
+            position: relative;
             background: transparent;
             border: none;
-            font-size: 22px;
-            padding-right: 25px;
+            width: 32px;
+            height: 32px;
         }
+
+.heart--empty, .heart--full {
+            position: absolute;
+            top: 0;
+            right: 0;
+            font-size: 32px;
+            padding-right: 32px;
+}
+
+.heart--full {
+            background: $gradientColor;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+}
+
+.heart--full:active {
+            opacity: 1;
+}
 
 .card__title {
             color: black;
             @include title(18px, 700, left);
             margin: 0;
-        }
+}
 
 .card__description {
             color: #353535;
             @include title(17px, 300, left);
             margin: 0;
-        }
+}
 }

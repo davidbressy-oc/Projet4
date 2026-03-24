@@ -63,3 +63,21 @@
   @include title(14px, 500);
 
 }
+
+.footer__title {
+
+  @include main__title(24px);
+  color: white;
+  text-align: left;
+
+}
+
+.footer__links {
+
+  a {
+    @include title(16px, 400, left);
+    color: white;
+    text-decoration: none;
+  }
+
+}
