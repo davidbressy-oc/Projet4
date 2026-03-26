@@ -74,12 +74,12 @@
 .heart--full {
             background: $gradientColor;
             background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: transparent;
             opacity: 0;
             transition: opacity 0.3s ease;
 }
 
-.heart--full:active {
+.heart--full:checked {
             opacity: 1;
 }
 
