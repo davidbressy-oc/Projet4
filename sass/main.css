@@ -3,6 +3,7 @@
   margin: 0;
 }
 
+/* HEADER */
 .main__title {
   font-family: shrikhand, cursive;
   font-weight: 400;
@@ -16,6 +17,7 @@
   text-align: center;
 }
 
+/* RESERVATION */
 .reservation__title {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -32,8 +34,10 @@
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 500;
   text-align: center;
+  text-decoration: none;
 }
 
+/* FONCTIONNEMENT */
 .functionnement__title {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -52,6 +56,7 @@
   text-align: center;
 }
 
+/* RESTAURANTS */
 .restaurants__title {
   font-family: Roboto, Arial, Helvetica, sans-serif;
   font-weight: 700;
@@ -70,6 +75,7 @@
   text-align: center;
 }
 
+/* FOOTER */
 .footer__title {
   font-family: shrikhand, cursive;
   font-weight: 400;
@@ -257,11 +263,11 @@
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 124%);
   -webkit-background-clip: text;
           background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.restaurants .heart--full:active {
+.restaurants .heart--full:checked {
   opacity: 1;
 }
 .restaurants .card__title {
@@ -325,4 +331,10 @@
   border: none;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   margin-bottom: 54px;
+  transition: 1000ms;
+}
+
+.reservation__button:hover {
+  filter: brightness(1.2);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.5019607843);
 }/*# sourceMappingURL=main.css.map */
