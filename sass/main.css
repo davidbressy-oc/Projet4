@@ -7,7 +7,7 @@
 .main__title {
   font-family: shrikhand, cursive;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 33px;
   text-align: center;
 }
 
@@ -99,6 +99,18 @@
   border: 2px dotted black;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body {
+  animation: fadeIn 2000ms ease-in-out;
+}
+
 .header__title__content {
   position: relative;
   display: flex;
@@ -110,16 +122,16 @@
 }
 
 .header__form {
-  position: relative;
   display: flex;
   justify-content: center;
   background-color: #EAEAEA;
   padding: 16px;
+  gap: 16px;
   z-index: 1;
-  gap: 17px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2509803922);
 }
 .header__form .fa-location-dot {
+  margin: 0;
   color: black;
 }
 
@@ -156,7 +168,9 @@
 }
 .footer__links i {
   color: white;
-  width: 22px;
+  width: 19px;
+  height: 19px;
+  margin: 0;
 }
 
 .reservation {
