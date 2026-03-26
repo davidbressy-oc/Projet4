@@ -267,7 +267,7 @@
   opacity: 0;
   transition: opacity 0.3s ease;
 }
-.restaurants .heart--full:checked {
+.restaurants .heart--full:hover {
   opacity: 1;
 }
 .restaurants .card__title {
