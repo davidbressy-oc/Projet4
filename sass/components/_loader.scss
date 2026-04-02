@@ -94,3 +94,28 @@
     pointer-events: none;
   }
 }
+
+
+.loader_pages {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 10;
+  animation: loaderFadeOut 750ms ease forwards;
+}
+
+@keyframes loaderFadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}

@@ -137,6 +137,14 @@
   color: #353535;
 }
 
+.fa-arrow-left {
+  position: absolute;
+  left: 17px;
+  top: 20px;
+  font-size: 30px;
+  z-index: 3;
+}
+
 .footer {
   background-color: #353535;
   padding: 22px 25px 40px 25px;
@@ -159,6 +167,42 @@
   width: 19px;
   height: 19px;
   margin: 0;
+}
+
+.photo__pages__image {
+  overflow: hidden;
+}
+.photo__pages__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  display: block;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F6F6F6;
+  padding: 39px 34px 10px 34px;
+}
+.menu__title {
+  margin-bottom: 12px;
+}
+.menu__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 27px;
+}
+.menu__button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .reservation {
@@ -275,6 +319,29 @@
     text-shadow: calc(0 * var(--step)) 1.2em #000, calc(-1 * var(--step)) 1.2em #000, calc(-2 * var(--step)) 1.2em #000, calc(-3 * var(--step)) 1.2em #000, calc(-4 * var(--step)) 1.2em #000, calc(-5 * var(--step)) 1.2em #000, calc(-6 * var(--step)) 1.2em #000, calc(-7 * var(--step)) 1.2em #000, calc(-8 * var(--step)) 1.2em #000;
   }
 }
+@keyframes loaderFadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  80% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.loader_pages {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 10;
+  animation: loaderFadeOut 750ms ease forwards;
+}
+
 @keyframes loaderFadeOut {
   0% {
     opacity: 1;
