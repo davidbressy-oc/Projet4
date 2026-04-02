@@ -1,0 +1,39 @@
+.photo__pages__image {
+  overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+}
+
+.menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backgroundColorLightGrey_2;
+    padding: 39px 34px 10px 34px;
+
+    &__title {
+        margin-bottom: 12px;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 27px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+}
