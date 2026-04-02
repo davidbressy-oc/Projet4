@@ -1,17 +1,3 @@
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-body {
-
-    animation: fadeIn 2000ms ease-in-out;
-}
-
 .header__title__content {
 
     position: relative;
