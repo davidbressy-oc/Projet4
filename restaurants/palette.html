@@ -18,48 +18,179 @@
 </head>
 
 <body>
-<div class="loader_pages"></div>
 
-<!-- HEADER -->
-<header>
-    <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
-    <div class="header__title__content">
-        <h1 class="main__title">ohmyfood</h1>
+    <!-- HEADER -->
+    <header>
+        <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        <div class="header__title__content">
+            <h1 class="main__title">ohmyfood</h1>
+        </div>
+    </header>
+
+    <!-- PHOTO -->
+    <div class="photo__pages">
+        <div class="photo__pages__image">
+            <img src="../assets/images/restaurants/palette.jpg" alt="La palette du goût">
+        </div>
     </div>
-</header>
 
-<!-- PHOTO -->
-<section class="photo__pages">
-                <div class="photo__pages__image">
-                    <img src="../assets/images/restaurants/palette.jpg" alt="La palette du goût">
-                </div>
-</section>
+    <!-- MENU -->
+    <section class="menu">
+        <div class="menu__header">
+            <h2 class="menu__title">La palette du goût</h2>
 
+            <button class="menu__like">
+                <i class="fa-regular fa-heart heart--empty"></i>
+                <i class="fa-solid fa-heart heart--full"></i>
+            </button>
+        </div>
 
-<!-- MENU -->
-<section class="menu">
-    <h2 class="menu__title">Réservez le menu qui</h2>
-                    <button class="restaurants__card__like">
-                    <i class="fa-regular fa-heart heart--empty"></i>
-                    <i class="fa-solid fa-heart heart--full"></i>
-                </button>
-    <p class="menu__description">
-        Découvrez des restaurants d'exception,<br>sélectionnés par nos soins.
-    </p>
+        <section class="menu__group">
+            <h3 class="menu__group__title">Entrées</h3>
 
-</section>
+            <button class="menu__item" type="button">
+                <span class="menu__item__content">
+                    <span class="menu__item__text">
+                        <span class="menu__item__title">Fricassée d'escargots</span>
+                        <span class="menu__item__description">Au piment d'Espelette</span>
+                    </span>
+                    <span class="menu__item__price">25€</span>
+                </span>
+                <span class="menu__item__check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </button>
 
-<!-- FOOTER -->
-<footer class="footer">
-    <h2 class="footer__title">ohmyfood</h2>
+            <button class="menu__item" type="button">
+                <span class="menu__item__content">
+                    <span class="menu__item__text">
+                        <span class="menu__item__title">Foie gras de canard mi-cuit</span>
+                        <span class="menu__item__description">Et ses copeaux de truffe noire</span>
+                    </span>
+                    <span class="menu__item__price">35€</span>
+                </span>
+                <span class="menu__item__check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </button>
 
-    <div class="footer__links">
-        <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
-        <a href="#"><i class="fa-solid fa-hands-helping"></i>Devenir partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+            <button class="menu__item" type="button">
+                <span class="menu__item__content">
+                    <span class="menu__item__text">
+                        <span class="menu__item__title">Œuf au plat</span>
+                        <span class="menu__item__description">Assaisonné à la truffe sur lit de caviar</span>
+                    </span>
+                    <span class="menu__item__price">20€</span>
+                </span>
+                <span class="menu__item__check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </button>
+        </section>
+
+        <section class="menu__group">
+            <h3 class="menu__group__title">Plats</h3>
+
+            <button class="menu__item" type="button">
+                <span class="menu__item__content">
+                    <span class="menu__item__text">
+                        <span class="menu__item__title">Filet de bœuf aux herbes</span>
+                        <span class="menu__item__description">Accompagné de sa ribambelle de légumes</span>
+                    </span>
+                    <span class="menu__item__price">40€</span>
+                </span>
+                <span class="menu__item__check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </button>
+
+            <button class="menu__item" type="button">
+                <span class="menu__item__content">
+                    <span class="menu__item__text">
+                        <span class="menu__item__title">Parmentier de queue de bœuf</span>
+                        <span class="menu__item__description">À la truffe noire sur sa purée de panais</span>
+                    </span>
+                    <span class="menu__item__price">35€</span>
+                </span>
+                <span class="menu__item__check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </button>
+
+            <button class="menu__item" type="button">
+                <span class="menu__item__content">
+                    <span class="menu__item__text">
+                        <span class="menu__item__title">Filet de turbot</span>
+                        <span class="menu__item__description">Aux agrumes</span>
+                    </span>
+                    <span class="menu__item__price">44€</span>
+                </span>
+                <span class="menu__item__check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </button>
+        </section>
+
+        <section class="menu__group">
+            <h3 class="menu__group__title">Desserts</h3>
+
+            <button class="menu__item" type="button">
+                <span class="menu__item__content">
+                    <span class="menu__item__text">
+                        <span class="menu__item__title">Paris-Brest</span>
+                        <span class="menu__item__description">Revisité</span>
+                    </span>
+                    <span class="menu__item__price">18€</span>
+                </span>
+                <span class="menu__item__check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </button>
+
+            <button class="menu__item" type="button">
+                <span class="menu__item__content">
+                    <span class="menu__item__text">
+                        <span class="menu__item__title">Macaron au chocolat d'exception</span>
+                        <span class="menu__item__description">Et glace à la vanille de Madagascar</span>
+                    </span>
+                    <span class="menu__item__price">22€</span>
+                </span>
+                <span class="menu__item__check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </button>
+
+            <button class="menu__item" type="button">
+                <span class="menu__item__content">
+                    <span class="menu__item__text">
+                        <span class="menu__item__title">Mousse au chocolat</span>
+                        <span class="menu__item__description">Au piment d'Espelette et à la truffe noire</span>
+                    </span>
+                    <span class="menu__item__price">23€</span>
+                </span>
+                <span class="menu__item__check">
+                    <i class="fa-solid fa-circle-check"></i>
+                </span>
+            </button>
+        </section>
+    </section>
+
+    <!-- COMMANDE -->
+    <div class="commande">
+        <a href="#" class="commande__button">Commander</a>
     </div>
-</footer>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h2 class="footer__title">ohmyfood</h2>
+
+        <div class="footer__links">
+            <a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a>
+            <a href="#"><i class="fa-solid fa-hands-helping"></i>Devenir partenaire</a>
+            <a href="#">Mentions légales</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
 
 </body>
 </html>

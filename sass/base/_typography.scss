@@ -33,8 +33,6 @@
   
 }
 
-
-
 /* FONCTIONNEMENT */
 
 .functionnement__title {
@@ -73,6 +71,56 @@
 
   @include title(14px, 500);
 
+}
+
+/* PAGES */
+
+.menu__title {
+  
+  @include main__title(28px);
+
+}
+
+.menu__group__title {
+  
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+
+}
+
+.menu__item__title {
+  
+font-family: Roboto;
+font-weight: 500;
+font-size: 18px;
+
+}
+
+.menu__item__description {
+  
+font-family: Roboto;
+font-weight: 300;
+font-size: 15.04px;
+
+}
+
+.menu__item__price {
+  
+font-family: Roboto;
+font-weight: 700;
+font-size: 15.04px;
+
+}
+
+/* COMMANDER */
+
+.commande__button {
+
+  @include title(24px, 500);
+  text-decoration: none;
+  
 }
 
 /* FOOTER */
