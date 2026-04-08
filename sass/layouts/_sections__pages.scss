@@ -2,7 +2,10 @@
   overflow: hidden;
   position: relative;
   z-index: 0;
+<<<<<<< HEAD
   height: 275px;
+=======
+>>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
 
   img {
     width: 100%;
@@ -13,10 +16,13 @@
   }
 }
 
+<<<<<<< HEAD
 .photo__pages__image--position img {
 object-position: center 52%;
 }
 
+=======
+>>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
 .menu {
   background-color: $backgroundColorLightGrey_2;
   border-radius: 40px 40px 0 0;
@@ -98,7 +104,10 @@ object-position: center 52%;
   border-radius: 15px;
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+<<<<<<< HEAD
   position: relative;
+=======
+>>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
   overflow: hidden;
 }
 
@@ -107,12 +116,16 @@ object-position: center 52%;
   justify-content: space-between;
   width: 100%;
   padding: 15px 13px;
+<<<<<<< HEAD
   box-sizing: border-box;
+=======
+>>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
 }
 
 .menu__item__text {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD
   overflow: hidden;
   align-items: flex-start;
   width: 100%;
@@ -133,11 +146,23 @@ object-position: center 52%;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+=======
+}
+
+.menu__item__title {
+  display: flex;
+  margin: 0 0 5px 0;
+}
+
+.menu__item__description {
+  display: flex;
+>>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
 }
 
 .menu__item__price {
   color: #353535;
   align-self: flex-end;
+<<<<<<< HEAD
   transition: margin-right 450ms ease;
 }
 
@@ -146,18 +171,31 @@ object-position: center 52%;
   top: 0;
   right: 0;
   height: 100%;
+=======
+  transition: transform 0.3s ease;
+}
+
+.menu__item__check {
+>>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
   display: flex;
   justify-content: center;
   align-items: center;
   width: 59px;
   background-color: #99E2D0;
   margin-right: -59px;
+<<<<<<< HEAD
   transition: margin-right 450ms ease;
+=======
+  transition: margin-right 500ms ease;
+>>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
 
   i {
     color: white;
     font-size: 20px;
+<<<<<<< HEAD
     margin: auto;
+=======
+>>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
   }
 }
 
@@ -165,6 +203,7 @@ object-position: center 52%;
   margin-right: 0;
 }
 
+<<<<<<< HEAD
 .menu__item:hover .menu__item__price {
   margin-right: 59px;
 }
@@ -173,6 +212,8 @@ object-position: center 52%;
   width: 65%;
 }
 
+=======
+>>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
 .commande {
   background: $backgroundColorLightGrey;
   display: flex;
