@@ -1,9 +1,15 @@
 .footer {
     background-color: $backgroundColorDarker;
     padding: 22px 25px 40px 25px;
+            @include desktop {
+    padding: 64px 25px 30px 25px;
+        }
 
     &__title {
         padding-bottom: 16px;
+                    @include desktop {
+        padding-bottom: 6px;
+        }
     }
 
     &__links {
@@ -18,19 +24,30 @@
         }
 
         i {
-<<<<<<< HEAD
             display: flex;
             justify-content: center;
             align-items: center;
             width: 19px;
             color: white;
-=======
-            color: white;
-            width: 19px;
-            height: 19px;
->>>>>>> fd11ac164944b76774d6f4ce40b955d7b246045f
             margin: 0;
         }
 
+        @include desktop {
+            display: flex;
+                flex-direction: row;
+                justify-content: end;
+                gap: 35px;
+padding-right: 45px;
+        }
+
+
     }
+
+        @include desktop {
+            display: flex;
+                flex-direction: row-reverse;
+                gap: 20px;
+padding-right: 205px;
+        }
+
 }

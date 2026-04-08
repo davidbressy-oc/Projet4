@@ -1,6 +1,7 @@
-// Utils (toujours en premier)
+// Utils
 @import "./utils/variables.scss";
 @import "./utils/mixins.scss";
+@import "./utils/breakpoints.scss";
 
 // Base
 @import "./base/refresh.scss";

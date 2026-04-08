@@ -78,7 +78,10 @@
 .menu__title {
   
   @include main__title(28px);
-
+          @include desktop {
+margin-left: 192px;
+margin-right: 192px;
+        }
 }
 
 .menu__group__title {
