@@ -1,0 +1,147 @@
+/* HEADER */
+
+.main__title {
+
+  @include main__title(33px);
+  
+}
+
+.form__input {
+  
+  @include form__input(16px);
+
+}
+
+/* RESERVATION */
+
+.reservation__title {
+  
+  @include title(29px);
+
+}
+
+.reservation__description {
+  
+  @include title(24px, 300);
+
+}
+
+.reservation__button {
+
+  @include title(24px, 500);
+  text-decoration: none;
+  
+}
+
+/* FONCTIONNEMENT */
+
+.functionnement__title {
+
+  @include title(24px, 700, left);
+
+}
+
+.functionnement__card__text {
+
+  @include title(16px, 500);
+
+}
+
+.functionnement__card__number {
+
+  @include title(14px, 500);
+
+}
+
+/* RESTAURANTS */
+
+.restaurants__title {
+
+  @include title(18px, 700, left);
+
+}
+
+.card__description {
+
+  @include title(17px, 300, left);
+
+}
+
+.restaurants__badge {
+
+  @include title(14px, 500);
+
+}
+
+/* PAGES */
+
+.menu__title {
+  
+  @include main__title(28px);
+          @include desktop {
+margin-left: 192px;
+margin-right: 192px;
+        }
+}
+
+.menu__group__title {
+  
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+
+}
+
+.menu__item__title {
+  
+font-family: Roboto;
+font-weight: 500;
+font-size: 18px;
+
+}
+
+.menu__item__description {
+  
+font-family: Roboto;
+font-weight: 300;
+font-size: 15.04px;
+
+}
+
+.menu__item__price {
+  
+font-family: Roboto;
+font-weight: 700;
+font-size: 15.04px;
+
+}
+
+/* COMMANDER */
+
+.commande__button {
+
+  @include title(24px, 500);
+  text-decoration: none;
+  
+}
+
+/* FOOTER */
+
+.footer__title {
+
+  @include main__title(24px);
+  color: white;
+  text-align: left;
+
+}
+
+.footer__links {
+
+  a {
+    @include title(16px, 400, left);
+    color: white;
+    text-decoration: none;
+  }
+
+}

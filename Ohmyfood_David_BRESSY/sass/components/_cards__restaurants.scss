@@ -1,0 +1,124 @@
+.restaurants {
+  &__title {
+    margin-bottom: 20px;
+    padding-left: 5px;
+  }
+
+  &__cards__container {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 180px;
+      margin-right: 180px;
+      row-gap: 50px;
+      column-gap: 100px;
+      padding-top: 18px;
+    }
+  }
+
+  &__card {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+.restaurants {
+  &__card__image {
+    position: relative;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      object-position: center 90%;
+
+      @include desktop {
+        height: 251px;
+        object-position: center 70%;
+      }
+    }
+
+    &--position {
+      img {
+        object-position: center 62%;
+
+        @include desktop {
+          object-position: center 57%;
+        }
+      }
+    }
+  }
+}
+
+  &__badge {
+    background-color: $quinaryColor;
+    color: $quaternaryColor;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 7px 9px 6px 9px;
+    border-radius: 2px;
+    @include shadow(0px, 2px, 4px, 0px, #00000026);
+  }
+
+  &__card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+  }
+
+  &__card__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+  }
+
+  &__card__like {
+    position: relative;
+    background: transparent;
+    border: none;
+    width: 32px;
+    height: 32px;
+  }
+
+  .heart--empty,
+  .heart--full {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 32px;
+    padding-right: 32px;
+  }
+
+  .heart--full {
+    background: $gradientColor;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .heart--full:hover {
+    opacity: 1;
+  }
+
+  .card__title {
+    color: black;
+    @include title(18px, 700, left);
+    margin: 0;
+  }
+
+  .card__description {
+    color: #353535;
+    @include title(17px, 300, left);
+    margin: 0;
+  }
+}

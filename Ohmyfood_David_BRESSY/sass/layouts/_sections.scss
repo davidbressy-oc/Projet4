@@ -1,0 +1,57 @@
+.reservation {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $backgroundColorLightGrey_2;
+    padding: 39px 34px 10px 34px;
+
+    &__title {
+        margin-bottom: 12px;
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 27px;
+    }
+
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+}
+
+.functionnement {
+
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px 66px 20px;
+
+    &__title {
+        margin-bottom: 26px;
+
+        @include desktop {
+margin-left: 180px;
+  }
+    }
+    
+}
+
+.restaurants {
+
+    background-color: $backgroundColorLightGrey_2;
+    padding: 48px 17px 108px 17px;
+
+    &__title {
+       
+        @include desktop {
+margin-left: 180px;
+
+  }
+    }
+}

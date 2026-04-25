@@ -1,0 +1,22 @@
+// Utils
+@import "./utils/variables.scss";
+@import "./utils/mixins.scss";
+@import "./utils/breakpoints.scss";
+
+// Base
+@import "./base/refresh.scss";
+@import "./base/typography.scss";
+
+// Layouts
+@import "./layouts/grids.scss";
+@import "./layouts/header.scss";
+@import "./layouts/footer.scss";
+@import "./layouts/sections__pages.scss";
+@import "./layouts/sections.scss";
+
+
+// Components
+@import "./components/loader";
+@import "./components/cards__restaurants.scss";
+@import "./components/cards__functionnement.scss";
+@import "./components/buttons.scss";
